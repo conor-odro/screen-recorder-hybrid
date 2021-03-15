@@ -22,7 +22,7 @@ docReady(function(){
   }
   
   // Start recording
-  document.querySelector('#sc-button').addEventListener('click', record);
+  document.querySelector('#record-button').addEventListener('click', record);
   
   // Receive messages
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
