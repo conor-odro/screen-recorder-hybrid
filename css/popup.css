@@ -1,0 +1,23 @@
+body, html {
+  margin: 0px;
+  width: 314px;
+  height: 510px;
+  background-color: #FFF;
+}
+
+#record-button {
+  width: 100%;
+  background: #2D89F4;
+  border-radius: 5px;
+  height: 40px;
+  color: #FFF;
+  font-family: Roboto;
+  font-weight: 600;
+  text-align: center;
+  line-height: 40px;
+  outline: none;
+  border: 0px;
+  font-size: 15px;
+  transition: opacity .15s cubic-bezier(.05,.03,.35,1);
+  margin-top: 0px;
+}
