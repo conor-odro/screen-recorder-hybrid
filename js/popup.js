@@ -13,12 +13,15 @@ docReady(function(){
   
   // Start recording
   function record(){
-      if (!recording) {
-          chrome.runtime.sendMessage({ type: "record" });
-      } else {
-          recording = false;
-          chrome.runtime.sendMessage({ type: "stop" });
-      }
+    if (!recording) {
+        recording = true;
+        chrome.runtime.sendMessage({ type: "record" });
+        document.querySelector('#record-button').innerHTML = 'Stop Recording';
+    } else {
+        recording = false;
+        chrome.runtime.sendMessage({ type: "stop" });
+        document.querySelector('#record-button').innerHTML = 'Start Recording';
+    }
   }
   
   // Start recording
