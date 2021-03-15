@@ -90,7 +90,7 @@ docReady(function(){
               //     injectCountdown(result.countdown_time);
               // });
           } else {
-              //chrome.runtime.sendMessage({type: "countdown"});
+              chrome.runtime.sendMessage({ type: "countdown" });
               // if (persistent) {
               //     $("#"+uniqueid+" #toolbar-record").removeClass("toolbar-inactive");
               // }

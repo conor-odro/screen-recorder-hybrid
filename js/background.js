@@ -157,6 +157,7 @@ function startRecording() {
 }
 
 function stopRecording() {
+  console.log('stopping')
   chrome.tabs.getSelected(null, function(tab) {
       mediaRecorder.stop();
 
@@ -165,6 +166,14 @@ function stopRecording() {
           type: "end"
       });
   });
+}
+
+// Countdown is over / recording can start
+function countdownOver() {
+  if (!recording) {
+    mediaRecorder.start(1000);
+    recording = true;
+  }
 }
 
 // Inject content script
@@ -219,10 +228,12 @@ function injectContent(start) {
 // Listen for messages from content / popup
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-      if (request.type == "record") {
-          startRecording();
-      } else if (request.type == "stop") {
-          stopRecording(request.type);
-      }
+    if (request.type == "record") {
+        startRecording();
+    } else if (request.type == "stop") {
+        stopRecording();
+    } else if (request.type == "countdown") {
+      countdownOver();
+    }
   }
 );
