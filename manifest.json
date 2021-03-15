@@ -15,5 +15,5 @@
   "permissions": [
     "<all_urls>","activeTab", "tabCapture", "tabs", "downloads", "storage", "identity", "https://www.googleapis.com/*"
   ],
-  "web_accessible_resources": ["html/*", "js/*", "css/*"]
+  "web_accessible_resources": ["html/*", "js/*", "css/*", "assets/images/*"]
 }
