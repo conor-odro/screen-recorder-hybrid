@@ -152,7 +152,7 @@ function record() {
 
 // Inject content scripts to start recording
 function startRecording() {
-  getDeviceId();
+  //getDeviceId();
   record();
 }
 
