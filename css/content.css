@@ -1,18 +1,18 @@
-#screenity-screen-recorder-extension .no-cursor, #screenity-screen-recorder-extension .no-cursor * {
+#screenity-hybrid-extension .no-cursor, #screenity-hybrid-extension .no-cursor * {
   cursor: none!important;
 }
-#screenity-screen-recorder-extension {
+#screenity-hybrid-extension {
   pointer-events: none;
   top: 0px;
   left: 0px;
 }
-#screenity-screen-recorder-extension * {
+#screenity-hybrid-extension * {
   pointer-events: unset;
 }
-#screenity-screen-recorder-extension :not(.pcr-app*) {
+#screenity-hybrid-extension :not(.pcr-app*) {
   all: unset;
 }
-#screenity-screen-recorder-extension #wrap-iframe {
+#screenity-hybrid-extension #wrap-iframe {
   position: fixed;
   border-radius: 50%;
   top: 0px;
@@ -26,17 +26,17 @@
   transition: transform .15s cubic-bezier(.05,.03,.35,1);
   transform: scale(1);
 }
-#screenity-screen-recorder-extension #wrap-iframe iframe {
+#screenity-hybrid-extension #wrap-iframe iframe {
   width: 100%;
   height: 100%;
   overflow: hidden;
   border: 0px;
 }
-#screenity-screen-recorder-extension .no-camera {
+#screenity-hybrid-extension .no-camera {
   transform: scale(0)!important;
   pointer-events: none;
 }
-#screenity-screen-recorder-extension #detect-iframe {
+#screenity-hybrid-extension #detect-iframe {
   width: 195px;
   height: 195px;
   z-index: 9999999999999!important;
@@ -45,13 +45,13 @@
   top: 0px;
   left: 0px;
 }
-#screenity-screen-recorder-extension #detect-iframe:hover {
+#screenity-hybrid-extension #detect-iframe:hover {
   cursor: move;
 }
-#screenity-screen-recorder-extension .detect-resize:hover {
+#screenity-hybrid-extension .detect-resize:hover {
   cursor: se-resize!important;
 }
-#screenity-screen-recorder-extension #hide-camera {
+#screenity-hybrid-extension #hide-camera {
   text-align: center;
   width: 40px;
   height: 40px;
@@ -66,11 +66,11 @@
   top: 7px;
   visibility: visible;
 }
-#screenity-screen-recorder-extension #hide-camera img {
+#screenity-hybrid-extension #hide-camera img {
   margin-top: 8px;
   width: 22px;
 }
-#screenity-screen-recorder-extension #change-size {
+#screenity-hybrid-extension #change-size {
   width: 80px;
   height: 38px;
   background: rgba(0, 0, 0, 0.5);
@@ -84,13 +84,13 @@
   vertical-align: middle;
   text-align: center;
 }
-#screenity-screen-recorder-extension #change-size:before {
+#screenity-hybrid-extension #change-size:before {
 content: "";
 display: inline-block;
 vertical-align: middle;
 height: 100%;
 }
-#screenity-screen-recorder-extension .choose-size {
+#screenity-hybrid-extension .choose-size {
   border-radius: 1000px;
   display: inline-block;
   margin-left: 5px;
@@ -98,30 +98,30 @@ height: 100%;
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
 }
-#screenity-screen-recorder-extension #small-size {
+#screenity-hybrid-extension #small-size {
   width: 9px;
   height: 9px;
 }
-#screenity-screen-recorder-extension .size-active {
+#screenity-hybrid-extension .size-active {
   background-color: #FFF;
   border: none!important;
 }
-#screenity-screen-recorder-extension #medium-size {
+#screenity-hybrid-extension #medium-size {
   width: 14px;
   height: 14px;
 }
-#screenity-screen-recorder-extension #large-size {
+#screenity-hybrid-extension #large-size {
   width: 20px;
   height: 20px;
 }
-#screenity-screen-recorder-extension .choose-size:not(.size-active):hover {
+#screenity-hybrid-extension .choose-size:not(.size-active):hover {
   cursor: pointer;
   opacity: .7;
 }
-#screenity-screen-recorder-extension .camera-hidden {
+#screenity-hybrid-extension .camera-hidden {
   visibility: hidden!important;;
 }
-#screenity-screen-recorder-extension #click-highlight {
+#screenity-hybrid-extension #click-highlight {
   width: 30px;
   height: 30px;
   border-radius: 200px;
@@ -134,11 +134,11 @@ height: 100%;
   transition-property: opacity, transform;
   pointer-events: none;
 }
-#screenity-screen-recorder-extension .show-click {
+#screenity-hybrid-extension .show-click {
   opacity: .5!important;
   transform: scale(1)!important;
 }
-#screenity-screen-recorder-extension #toolbar-settings {
+#screenity-hybrid-extension #toolbar-settings {
   all:initial;
   width: 282px;
   height: 335px;
@@ -152,10 +152,10 @@ height: 100%;
   margin-bottom: 0px;
   visibility: visible;
 }
-#screenity-screen-recorder-extension .settings-camon {
+#screenity-hybrid-extension .settings-camon {
   left: 230px!important
 }
-#screenity-screen-recorder-extension #toolbar-record {
+#screenity-hybrid-extension #toolbar-record {
   all: initial;
   position: fixed;
   bottom: 15px;
@@ -167,10 +167,10 @@ height: 100%;
   margin-bottom: 0px;
   visibility: visible;
 }
-#screenity-screen-recorder-extension #toolbar-record *, #screenity-screen-recorder-extension #toolbar-record-pen * {
+#screenity-hybrid-extension #toolbar-record *, #screenity-hybrid-extension #toolbar-record-pen * {
   all: unset;
 }
-#screenity-screen-recorder-extension #toolbar-record-pen, #screenity-screen-recorder-extension #toolbar-record-cursor {
+#screenity-hybrid-extension #toolbar-record-pen, #screenity-hybrid-extension #toolbar-record-cursor {
   all: initial;
   position: fixed;
   bottom: 70px;
@@ -182,7 +182,7 @@ height: 100%;
   margin-bottom: 0px;
   visibility: visible;
 }
-#screenity-screen-recorder-extension #toolbar-record .tool, #screenity-screen-recorder-extension #toolbar-record-pen .tool, #screenity-screen-recorder-extension #toolbar-record-cursor .tool {
+#screenity-hybrid-extension #toolbar-record .tool, #screenity-hybrid-extension #toolbar-record-pen .tool, #screenity-hybrid-extension #toolbar-record-cursor .tool {
   width: 45px;
   height: 45px;
   border-radius: 200px;
@@ -196,39 +196,39 @@ height: 100%;
   transition-property: background-color, transform, opacity;
   box-sizing: border-box;
 }
-#screenity-screen-recorder-extension #toolbar-record .tool:hover, #screenity-screen-recorder-extension #toolbar-record-pen .tool:hover, #screenity-screen-recorder-extension #hide-camera:hover, #screenity-screen-recorder-extension #toolbar-record-cursor .tool:hover{
+#screenity-hybrid-extension #toolbar-record .tool:hover, #screenity-hybrid-extension #toolbar-record-pen .tool:hover, #screenity-hybrid-extension #hide-camera:hover, #screenity-hybrid-extension #toolbar-record-cursor .tool:hover{
   cursor: pointer!important;
   background-color: #F2F3F3;
 }
-#screenity-screen-recorder-extension #toolbar-record .tool img, #screenity-screen-recorder-extension #toolbar-record-pen .tool img, #screenity-screen-recorder-extension #toolbar-record-cursor .tool img {
+#screenity-hybrid-extension #toolbar-record .tool img, #screenity-hybrid-extension #toolbar-record-pen .tool img, #screenity-hybrid-extension #toolbar-record-cursor .tool img {
   display: inline-block;
   margin-top: 6px;
 }
-#screenity-screen-recorder-extension #toolbar-record #pause {
+#screenity-hybrid-extension #toolbar-record #pause {
   background-color: #2D89F4;
   border: 0px;
 }
-#screenity-screen-recorder-extension .toolbar-inactive {
+#screenity-hybrid-extension .toolbar-inactive {
   margin-bottom: -10px!important;
   opacity: 0!important;
 }
-#screenity-screen-recorder-extension #toolbar-record-pen.toolbar-inactive, #screenity-screen-recorder-extension #toolbar-record-cursor.toolbar-inactive {
+#screenity-hybrid-extension #toolbar-record-pen.toolbar-inactive, #screenity-hybrid-extension #toolbar-record-cursor.toolbar-inactive {
   visibility: hidden!important;
 }
-#screenity-screen-recorder-extension .toolbar-inactive:not(#toolbar-record) {
+#screenity-hybrid-extension .toolbar-inactive:not(#toolbar-record) {
   pointer-events: none;
 }
-#screenity-screen-recorder-extension .pen-options {
+#screenity-hybrid-extension .pen-options {
   transform: scale(.85)!important;
 }
-#screenity-screen-recorder-extension .pen-options img {
+#screenity-hybrid-extension .pen-options img {
   transform: scale(1.15)!important;
 }
-#screenity-screen-recorder-extension .tool-disabled {
+#screenity-hybrid-extension .tool-disabled {
   opacity: .3!important;
   pointer-events: none!important;
 }
-#screenity-screen-recorder-extension #color-icon {
+#screenity-hybrid-extension #color-icon {
   width: 20px;
   height: 20px;
   border-radius: 200px;
@@ -236,22 +236,22 @@ height: 100%;
   margin-top: 6px;
   display: inline-block;
 }
-#screenity-screen-recorder-extension .pcr-app.visible  {
+#screenity-hybrid-extension .pcr-app.visible  {
   z-index: 99999999999;
   pointer-events: all;
   margin-top: -10px!important;
 }
-#screenity-screen-recorder-extension .tool-active {
+#screenity-hybrid-extension .tool-active {
   background-color: #2D89F4!important;
   border: 0px!important;
 }
-#screenity-screen-recorder-extension .hide-button {
+#screenity-hybrid-extension .hide-button {
   visibility: hidden!important;
 }
-#screenity-screen-recorder-extension .camera-on {
+#screenity-hybrid-extension .camera-on {
   display: none!important;
 }
-#screenity-screen-recorder-extension #canvas-cont {
+#screenity-hybrid-extension #canvas-cont {
 position: absolute;
 top: 0px;
 left: 0px;
@@ -259,23 +259,23 @@ width: 100%;
 height: 100%;
 z-index: 99999999!important;
 }
-#screenity-screen-recorder-extension #canvas-freedraw, #screenity-screen-recorder-extension #canvas-focus {
+#screenity-hybrid-extension #canvas-freedraw, #screenity-hybrid-extension #canvas-focus {
 position: absolute;
 top: 0px;
 left: 0px;
 z-index: 99999999!important;
 }
-#screenity-screen-recorder-extension #canvas-focus {
+#screenity-hybrid-extension #canvas-focus {
   pointer-events: none!important;
 }
-#screenity-screen-recorder-extension #canvas-freedraw:hover {
+#screenity-hybrid-extension #canvas-freedraw:hover {
   cursor: crosshair;
 }
-#screenity-screen-recorder-extension #canvas-draw {
+#screenity-hybrid-extension #canvas-draw {
 width: 100%;
 height: 100%;
 }
-#screenity-screen-recorder-extension #pen-slider, #screenity-screen-recorder-extension #eraser-slider {
+#screenity-hybrid-extension #pen-slider, #screenity-hybrid-extension #eraser-slider {
   transition: opacity .25s cubic-bezier(.05,.03,.35,1);
   opacity: 1;
   position: fixed;
@@ -287,10 +287,10 @@ height: 100%;
   z-index: 9999999999;
   pointer-events: all!important;
 }
-#screenity-screen-recorder-extension #eraser-slider {
+#screenity-hybrid-extension #eraser-slider {
   left: 123px!important;
 }
-#screenity-screen-recorder-extension #pen-slider input, #screenity-screen-recorder-extension #eraser-slider input {
+#screenity-hybrid-extension #pen-slider input, #screenity-hybrid-extension #eraser-slider input {
 position: fixed;
   z-index: 9999999999!important;
 -webkit-appearance: none;
@@ -303,10 +303,10 @@ transform: rotate(-90deg);
   left: 40px;
   background-color: rgba(0,0,0,0);
 }
-#screenity-screen-recorder-extension #eraser-slider input {
+#screenity-hybrid-extension #eraser-slider input {
   left: 96px!important;
 }
-#screenity-screen-recorder-extension #pen-slider input::-webkit-slider-thumb, #screenity-screen-recorder-extension #eraser-slider input::-webkit-slider-thumb {
+#screenity-hybrid-extension #pen-slider input::-webkit-slider-thumb, #screenity-hybrid-extension #eraser-slider input::-webkit-slider-thumb {
 -webkit-appearance: none; 
 appearance: none;
 width: 25px;
@@ -318,16 +318,16 @@ box-sizing: border-box;
 box-shadow: 0px 4px 40px rgba(140, 167, 192, 0.15);
 cursor: pointer;
 }
-#screenity-screen-recorder-extension .slider-track {
+#screenity-hybrid-extension .slider-track {
   position: fixed;
   z-index: 9999999!important;
   left: 84.5px;
   bottom: 125px;
 }
-#screenity-screen-recorder-extension #eraser-slider .slider-track {
+#screenity-hybrid-extension #eraser-slider .slider-track {
   left: 141px!important;
 }
-#screenity-screen-recorder-extension #countdown {
+#screenity-hybrid-extension #countdown {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -342,16 +342,16 @@ cursor: pointer;
   line-height: 250px;
   z-index: 9999999999!important;
 }
-#screenity-screen-recorder-extension #countdown img {
+#screenity-hybrid-extension #countdown img {
   vertical-align: middle;
 }
-#screenity-screen-recorder-extension .countdown-done {
+#screenity-hybrid-extension .countdown-done {
   display: none!important;
 }
-#screenity-screen-recorder-extension .noselect, #screenity-screen-recorder-extension .noselect * {
+#screenity-hybrid-extension .noselect, #screenity-hybrid-extension .noselect * {
   user-select: none!important;
 }
-#screenity-screen-recorder-extension .notransition {
+#screenity-hybrid-extension .notransition {
 -webkit-transition: none !important;
 -moz-transition: none !important;
 -o-transition: none !important;
