@@ -17,8 +17,8 @@
   border-radius: 50%;
   top: 0px;
   left: 0px;
-  width: 195px;
-  height: 195px;
+  width: 330px;
+  height: 330px;
   z-index: 999999999!important;
   overflow: hidden;
   display: block;
@@ -37,8 +37,8 @@
   pointer-events: none;
 }
 #screenity-hybrid-extension #detect-iframe {
-  width: 195px;
-  height: 195px;
+  width: 330px;
+  height: 330px;
   z-index: 9999999999999!important;
   position: fixed;
   border-radius: 50%;

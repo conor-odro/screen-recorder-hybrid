@@ -19,7 +19,7 @@ var micable = true;
 var width = 1920;
 var height = 1080;
 var quality = "max";
-var camerasize = "small-size";
+var camerasize = "medium-size";
 var camerapos = {x:"10px", y:"10px"};
 var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
 
